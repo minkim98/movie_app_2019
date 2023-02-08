@@ -1,4 +1,4 @@
-# Javascript homework
+# Javascript Homework
 
 Based on Nomad Coders
 
