@@ -1,7 +1,12 @@
-import React from 'react';
+/* import React from 'react';
 import axios from 'axios';
-import Movie from "./Movie";
-import "./App.css"
+import Movie from "./components/Movie"; */
+
+import {HashRouter, Route, Routes} from "react-router-dom";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Detail from "./routes/Detail";
+import Navigation from "./components/Navigation";
 
 /* function Food({name, rating}){
   return (
@@ -66,7 +71,7 @@ function App() {
   }
 } */
 
-class App extends React.Component {
+/* class App extends React.Component {
   state = {
     isLoading: true,
     movies: [],
@@ -111,6 +116,19 @@ class App extends React.Component {
       </section>
     )
   }
+} */
+
+function App(){
+  return <HashRouter>
+    <Navigation/>
+    <Routes>
+      
+    <Route path="/home" exact={true} element={<Home/>}/>
+    <Route path="/about" element={<About/>}/>
+    <Route path="/movie/:id" element ={<Detail/>}/>
+    </Routes>
+    
+  </HashRouter>
 }
 
 export default App;
