@@ -6,10 +6,15 @@ function About() {
         <div className="about__container">
             <div className="about__text">
                 <span>
-                    "Freedom is the freedom to say that two plus two make four. If that is granted, all else follows."
+                    <p>
+                        "Freedom is the freedom to say that two plus two make four. If that is granted, all else follows."
+                    </p>
                 </span>
                 <span>
-                    - George Orwell, 1984
+                    <p>
+                        - George Orwell, 1984
+
+                    </p>
                 </span>
             </div>
         </div>

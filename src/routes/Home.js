@@ -40,7 +40,8 @@ class Home extends React.Component {
                                     title={movie.name}
                                     summary={movie.summary}
                                     poster={movie.image.medium}
-                                    runtime={movie.runtime} />
+                                    runtime={movie.runtime}
+                                    url = {movie.url} />
                             ))}
                     </div>
 
